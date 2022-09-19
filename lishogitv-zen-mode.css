@@ -1,0 +1,23 @@
+/* ==UserStyle==
+@name           LishogiTV Zen Mode
+@namespace      USO Archive
+@author         Daniel Dugovic
+@description    `A more relaxed LishogiTV experience.`
+@version        20220918.21.00
+@license        CC-BY-SA-4.0
+@preprocessor   uso
+==/UserStyle== */
+@-moz-document url-prefix("https://lichess.org"), regexp("https://lishogi.org.*/tv") {
+body.zen #top,
+body.zen .tv-channels,
+body.zen .round__side {
+  opacity: 0;
+  transition: 1s;
+}
+body.zen #top:hover,
+body.zen.offline #reconnecting,
+body.zen .tv-channels:hover,
+body.zen .round__side:hover {
+  opacity: 1 !important;
+}
+}
