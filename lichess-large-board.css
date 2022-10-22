@@ -4,40 +4,31 @@
 @version        1.0.0
 @description    Enlarge "100%" lichess.org boards
 @author         Daniel Dugovic
-@version        20221022.07.00
+@version        20221022.07.30
 @license        CC-BY-SA-4.0
 @preprocessor   uso
 ==/UserStyle== */
 
 @-moz-document domain("lichess.org") {
-    #main-wrap.is2d .analyse {
-        grid-template-columns: minmax(230px, 350px) 2vmin minmax(calc(80vmin * var(--board-scale)), calc(100vh * var(--board-scale) - calc(var(--site-header-height) + var(--site-header-margin)) - 3rem)) var(--gauge-gap) minmax(240px, 400px);
+    #main-wrap .analyse {
+        grid-template-columns: minmax(210px, 350px) 2vmin minmax(calc(80vmin * var(--board-scale)), calc(100vh * var(--board-scale) - calc(var(--site-header-height) + var(--site-header-margin)) - 2rem)) var(--gauge-gap) minmax(240px, 400px);
     }
-    #main-wrap.is2d .puzzle {
-        grid-template-columns: minmax(calc(80vmin * var(--board-scale)), calc(100vh * var(--board-scale) - calc(var(--site-header-height) + var(--site-header-margin)) - 3rem)) var(--gauge-gap) minmax(240px, 400px);
+    #main-wrap .puzzle {
+        grid-template-columns: minmax(210px, 350px) 2vmin minmax(calc(80vmin * var(--board-scale)), calc(100vh * var(--board-scale) - calc(var(--site-header-height) + var(--site-header-margin)) - 2rem)) var(--gauge-gap) minmax(240px, 400px);
     }
-    #main-wrap.is2d .racer {
-        grid-template-columns: minmax(calc(80vmin * var(--board-scale)), calc(100vh * var(--board-scale) - calc(var(--site-header-height) + var(--site-header-margin)) - 3rem)) minmax(240px, 400px);
+    #main-wrap .racer {
+        grid-template-columns: minmax(calc(80vmin * var(--board-scale)), calc(100vh * var(--board-scale) - calc(var(--site-header-height) + var(--site-header-margin)) - 2rem)) minmax(240px, 400px);
     }
-    #main-wrap.is2d .round__app {
-        grid-template-columns: minmax(calc(80vmin * var(--board-scale)), calc(100vh * var(--board-scale) - calc(var(--site-header-height) + var(--site-header-margin)) - 3rem)) minmax(240px, 400px) !important;
+    #main-wrap .round {
+        grid-template-columns: minmax(210px, 350px) minmax(calc(80vmin * var(--board-scale)), calc(100vh * var(--board-scale) - calc(var(--site-header-height) + var(--site-header-margin)) - 2rem)) minmax(240px, 400px);
     }
-    #main-wrap.is2d .storm--play {
-        grid-template-columns: minmax(calc(80vmin * var(--board-scale)), calc(100vh * var(--board-scale) - calc(var(--site-header-height) + var(--site-header-margin)) - 3rem)) minmax(240px, 400px)
+    #main-wrap .round__app {
+        grid-template-columns: minmax(calc(80vmin * var(--board-scale)), calc(100vh * var(--board-scale) - calc(var(--site-header-height) + var(--site-header-margin)) - 2rem)) minmax(240px, 400px) !important;
     }
-    #main-wrap.is3d .analyse {
-        grid-template-columns: minmax(230px, 350px) 2vmin minmax(calc(80vmin * var(--board-scale)), calc(100vh * var(--board-scale) - calc(var(--site-header-height) + var(--site-header-margin)) - 3rem)) var(--gauge-gap) minmax(240px, 400px);
+    #main-wrap .storm--play {
+        grid-template-columns: minmax(calc(80vmin * var(--board-scale)), calc(100vh * var(--board-scale) - calc(var(--site-header-height) + var(--site-header-margin)) - 2rem)) minmax(240px, 400px)
     }
-    #main-wrap.is3d .puzzle {
-        grid-template-columns: minmax(calc(80vmin * var(--board-scale)), calc(100vh * var(--board-scale) - calc(var(--site-header-height) + var(--site-header-margin)) - 3rem)) var(--gauge-gap) minmax(240px, 400px);
-    }
-    #main-wrap.is3d .racer {
-        grid-template-columns: minmax(calc(80vmin * var(--board-scale)), calc(100vh * var(--board-scale) - calc(var(--site-header-height) + var(--site-header-margin)) - 3rem)) minmax(240px, 400px);
-    }
-    #main-wrap.is3d .round__app {
-        grid-template-columns: minmax(calc(80vmin * var(--board-scale)), calc(100vh * var(--board-scale) - calc(var(--site-header-height) + var(--site-header-margin)) - 3rem)) minmax(240px, 400px) !important;
-    }
-    #main-wrap.is3d .storm--play {
-        grid-template-columns: minmax(calc(80vmin * var(--board-scale)), calc(100vh * var(--board-scale) - calc(var(--site-header-height) + var(--site-header-margin)) - 3rem)) minmax(240px, 400px)
+    #main-wrap .tv-single {
+        grid-template-columns: minmax(210px, 350px) minmax(calc(80vmin * var(--board-scale)), calc(100vh * var(--board-scale) - calc(var(--site-header-height) + var(--site-header-margin)) - 2rem)) minmax(240px, 400px);
     }
 }
