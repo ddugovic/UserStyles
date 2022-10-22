@@ -18,7 +18,6 @@
     }
     .round__app {
         grid-template-columns: minmax(calc(80vmin * var(--board-scale)), calc(100vh * var(--board-scale) - calc(var(--site-header-height) + var(--site-header-margin)) - 3rem)) minmax(240px, 400px) !important;
-
     }
     .storm--play {
         grid-template-columns: minmax(calc(80vmin * var(--board-scale)), calc(100vh * var(--board-scale) - calc(var(--site-header-height) + var(--site-header-margin)) - 3rem)) minmax(240px, 400px)
