@@ -1,0 +1,26 @@
+/* ==UserStyle==
+@name           Lichess Large Board
+@namespace      github.com/openstyles/stylus
+@version        1.0.0
+@description    Enlarge "100%" lichess.org boards
+@author         Daniel Dugovic
+@version        20221022.06.00
+@license        CC-BY-SA-4.0
+@preprocessor   uso
+==/UserStyle== */
+
+@-moz-document domain("lichess.org") {
+    .puzzle {
+        grid-template-columns: minmax(calc(80vmin * var(--board-scale)), calc(100vh * var(--board-scale) - calc(var(--site-header-height) + var(--site-header-margin)) - 3rem)) var(--gauge-gap) minmax(240px, 400px);
+    }
+    .racer {
+        grid-template-columns: minmax(calc(80vmin * var(--board-scale)), calc(100vh * var(--board-scale) - calc(var(--site-header-height) + var(--site-header-margin)) - 3rem)) minmax(240px, 400px);
+    }
+    .round__app {
+        grid-template-columns: minmax(calc(80vmin * var(--board-scale)), calc(100vh * var(--board-scale) - calc(var(--site-header-height) + var(--site-header-margin)) - 3rem)) minmax(240px, 400px) !important;
+
+    }
+    .storm--play {
+        grid-template-columns: minmax(calc(80vmin * var(--board-scale)), calc(100vh * var(--board-scale) - calc(var(--site-header-height) + var(--site-header-margin)) - 3rem)) minmax(240px, 400px)
+    }
+}
