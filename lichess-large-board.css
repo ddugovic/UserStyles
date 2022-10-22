@@ -4,7 +4,7 @@
 @version        1.0.0
 @description    Enlarge "100%" lichess.org boards
 @author         Daniel Dugovic
-@version        20221022.07.30
+@version        20221022.08.30
 @license        CC-BY-SA-4.0
 @preprocessor   uso
 ==/UserStyle== */
@@ -27,6 +27,9 @@
     }
     #main-wrap .storm--play {
         grid-template-columns: minmax(calc(80vmin * var(--board-scale)), calc(100vh * var(--board-scale) - calc(var(--site-header-height) + var(--site-header-margin)) - 2rem)) minmax(240px, 400px)
+    }
+    #main-wrap .swiss {
+       grid-template-columns: minmax(210px, 350px) minmax(500px, calc( 100vh * .9 - calc(var(--site-header-height) + var(--site-header-margin)) - 3rem)) minmax(240px, 400px);
     }
     #main-wrap .tv-single {
         grid-template-columns: minmax(210px, 350px) minmax(calc(80vmin * var(--board-scale)), calc(100vh * var(--board-scale) - calc(var(--site-header-height) + var(--site-header-margin)) - 2rem)) minmax(240px, 400px);
