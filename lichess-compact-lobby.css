@@ -34,10 +34,7 @@
         padding: 1.3em;
     }
     #main-wrap .lobby__box__content > table > tbody > tr:nth-child(9),
-    #main-wrap .lobby__box__content > table > tbody > tr:nth-child(10),
-    #main-wrap > main > .lobby__leaderboard.lobby__box,
-    #main-wrap > main > .lobby__winners.lobby__box,
-    #main-wrap > main > .lobby__forum.lobby__box {
-        display: none;
+    #main-wrap .lobby__box__content > table > tbody > tr:nth-child(10) {
+        visibility: collapse;
     }
 }
