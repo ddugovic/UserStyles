@@ -1,18 +1,43 @@
-   /* ==UserStyle==
+/* ==UserStyle==
 @name           Lichess Compact Lobby
-@namespace      github.com/ddugovic/UserStyles
-@version        1.0
-@description    Hides leaderboard and tournament winners
+@namespace      USO Archive
 @author         Daniel Dugovic
+@description    Hides leaderboard and tournament winners`
+@version        1.0.0
+@license        CC-BY-SA-4.0
+@preprocessor   uso
 ==/UserStyle== */
-@-moz-document domain("lichess.org"), domain("lichess.dev")
-{
-   #main-wrap > main > .lobby__tv,
-   #main-wrap > main > .lobby__leaderboard.lobby__box,
-   #main-wrap > main > .lobby__winners.lobby__box,
-   #main-wrap > main > .lobby__puzzle,
-   #main-wrap > main > .lobby__forum.lobby__box
-   {
-       display: none;
-   }
+@-moz-document domain("lichess.org") {
+    #main-wrap .lobby {
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(2, fit-content(0));
+        grid-template-areas:
+            'side app app blog'
+            'side app app table'
+            'tv leader winner puzzle'
+            'about tours tours support'
+            '. tours tours .'
+            '. simuls simuls .';
+    }
+    #main-wrap .lobby__blog {
+        align-items: start;
+    }
+    #main-wrap .lobby__blog > a:nth-child(2),
+    #main-wrap .lobby__blog > a:nth-child(3) {
+        visibility: collapse;
+    }
+    #main-wrap .lobby__start {
+        margin: -12em 0 0 0;
+    }
+    #main-wrap .lobby__start a {
+        margin: 1.3em 1.45em;
+        padding: 1.3em;
+    }
+    #main-wrap .lobby__box__content > table > tbody > tr:nth-child(9),
+    #main-wrap .lobby__box__content > table > tbody > tr:nth-child(10),
+    #main-wrap > main > .lobby__leaderboard.lobby__box,
+    #main-wrap > main > .lobby__winners.lobby__box,
+    #main-wrap > main > .lobby__forum.lobby__box {
+        display: none;
+    }
 }
