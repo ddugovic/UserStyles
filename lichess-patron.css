@@ -2,10 +2,10 @@
 @name           Lichess Patron
 @namespace      github.com/ddugovic/UserStyles
 @version        1.0
-@description    Conceal Lichess Patron menu
+@description    Hide Lichess Patron ads
 @author         Daniel Dugovic
 ==/UserStyle== */
 
 @-moz-document domain("lichess.org") {
-    .site-title-nav__donate { display: none }
+    .site-title-nav__donate, .lobby__support { visibility: hidden }
 }
